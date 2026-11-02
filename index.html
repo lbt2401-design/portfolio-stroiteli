@@ -376,6 +376,10 @@
     .toc a:hover img { opacity: .92; }
     .folio__cta:hover { text-decoration: underline; text-underline-offset: .2em; }
   }
+  /* на низких экранах кинетика перекрывает строки на границе актов: показываем строки статично */
+  @media (max-height: 560px) {
+    .v-ki { transform: none !important; opacity: 1 !important; }
+  }
 </style>
 </head>
 <body>
